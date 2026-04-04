@@ -117,7 +117,7 @@ bindEventHandler("OnResourceReady", thisResource, function (event, resource) {
 
 bindEventHandler("OnResourceStart", thisResource, function (event, resource) {
 	if (!supportedGames.includes(game.game)) {
-		console.error("This resource is not supported for this game.");
+		console.warn(`${thisResource.name}] Not supported for this game. Aborting ...`);
 		event.preventDefault();
 		return false;
 	}
@@ -161,17 +161,13 @@ addEventHandler("OnDrawnHUD", function (event) {
 		// Map blips
 		getElementsByType(ELEMENT_DUMMY).filter(dummyElement => dummyElement.getData("v.blip") != null).forEach(blip => {
 			let imageIndex = blip.getData("v.blip");
-			console.log(`Blip images ${blipImages.length}`);
 			if (imageIndex != -1) {
-				console.log(`Rendering blip ${blip.id} with image ${imageIndex} (${typeof imageIndex}).`);
 				if (blipImages[imageIndex] != null) {
 					let mapPosition = getPositionOnMap(blip.position);
 					let sizeMultiplier = (blip.getData("v.size") != null) ? blip.getData("v.size") : 1.0;
 					let size = (blip.getData("v.size") != null) ? new Vec2(iconSize.x * sizeMultiplier, iconSize.y * sizeMultiplier) : iconSize;
 					let iconPosition = new Vec2(mapRenderPosition.x + (mapPosition.x - (size.x / 2)), mapRenderPosition.y + (mapPosition.y - (size.y / 2)));
 					graphics.drawRectangle(blipImages[imageIndex], iconPosition, size, COLOUR_WHITE, COLOUR_WHITE, COLOUR_WHITE, COLOUR_WHITE, 0.0, [0.5, 0.5]);
-				} else {
-					console.log(`Blip ${blip.id} failed to render. Missing image.`);
 				}
 			}
 		});
