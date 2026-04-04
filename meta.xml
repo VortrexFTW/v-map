@@ -1,0 +1,37 @@
+<meta>
+	<info title="v-map" author="Vortrex" version="1.0" description="In-game map" />
+
+	<script src="client.js" type="client" language="javascript" />
+
+	<!-- MAP BACKGROUND -->
+	<file src="files/images/mafia1.png" type="client" />
+ 
+	<!-- BLIPS -->
+	<file src="files/images/icons/player-blip.png" type="client" />
+	<file src="files/images/icons/player-blip-2.png" type="client" />
+	<file src="files/images/icons/radar-waypoint.png" type="client" />
+
+	<file src="files/images/icons/radar-bar.png" type="client" />
+	<file src="files/images/icons/radar-boat.png" type="client" />
+	<file src="files/images/icons/radar-car-dealer.png" type="client" />
+	<file src="files/images/icons/radar-clothes.png" type="client" />
+	<file src="files/images/icons/radar-club.png" type="client" />
+	<file src="files/images/icons/radar-darts.png" type="client" />
+	<file src="files/images/icons/radar-fire-station.png" type="client" />
+	<file src="files/images/icons/radar-gun.png" type="client" />
+	<file src="files/images/icons/radar-heart.png" type="client" />
+	<file src="files/images/icons/radar-hospital.png" type="client" />
+	<file src="files/images/icons/radar-house.png" type="client" />
+	<file src="files/images/icons/radar-job.png" type="client" />
+	<file src="files/images/icons/radar-money.png" type="client" />
+	<file src="files/images/icons/radar-pay-n-spray.png" type="client" />
+	<file src="files/images/icons/radar-police-station.png" type="client" />
+	<file src="files/images/icons/radar-restaurant.png" type="client" />
+	<file src="files/images/icons/radar-strip-club.png" type="client" />
+	<file src="files/images/icons/radar-taxi.png" type="client" />
+	<file src="files/images/icons/radar-train.png" type="client" />
+	<file src="files/images/icons/radar-unknown.png" type="client" />
+	<file src="files/images/icons/radar-car2.png" type="client" />
+	<file src="files/images/icons/radar-church.png" type="client" />
+	<file src="files/images/icons/radar-fuel.png" type="client" />
+</meta>
