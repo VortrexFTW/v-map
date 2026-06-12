@@ -187,8 +187,10 @@ function loadImage(filePath) {
 	}
 
 	if(filePath.toLowerCase().endsWith(".png")) {
+		console.log(`[${thisResource.name}] Loading PNG image (Path: ${filePath})`);
 		return graphics.loadPNG(imageFile);
 	} else if(filePath.toLowerCase().endsWith(".bmp")) {
+		console.log(`[${thisResource.name}] Loading BMP image (Path: ${filePath})`);
 		return graphics.loadBMP(imageFile);
 	}
 
